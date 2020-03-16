@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Teste Image JS</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <h2 id="demo">Teste onMouse image JavaScript</h2>
-        <h3 class="texto">Lista de imagens</h3>
 
-        <img src="cat.png" class="image" alt="Cat">
-        <img src="cat.png" class="image" alt="Cat">
-        <img src="cat.png" class="image" alt="Cat">
-        <img src="cat.png" class="image" alt="Cat">
-        <img src="cat.png" class="image" alt="Cat">
-    </body>
+<head>
+    <title>Teste Image JS</title>
+    <link rel="stylesheet" href="index.css">
+</head>
 
-    <script src="index.js"></script>
+<body>
+    <h2 id="demo">Teste onMouse image JavaScript</h2>
+    <h3 class="texto">Lista de imagens</h3>
+    <div class="grid">
+        <script>
+            var result = '';
+            for (i = 1; i <= 8; i++) {
+                result +=
+                    '<div class="card"><img src="cat.png" class="image" alt="Cat">' +
+                    '<h3 class="info">Gato ' + i + '</h3>' +
+                    '<button class="btn btn-light button">+ Detalhes</button></div>'
+            }
+            document.write(result)
+        </script>
+    </div>
+    </div>
+</body>
+
+<script src="index.js"></script>
+
 </html>

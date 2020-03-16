@@ -1,11 +1,11 @@
 var userSelection = document.getElementsByClassName('texto');
-var userSelectionImage = document.getElementsByClassName('image');
+var userSelectionImage = document.getElementsByClassName('card');
 
 
 for (var i = 0; i < userSelectionImage.length; i++) {
     (function (index) {
         userSelectionImage[index].addEventListener("mouseover", function () {
-            userSelectionImage[index].style.backgroundColor = "red";
+            userSelectionImage[index].style.backgroundColor = "#bbdefb";
         })
 
         userSelectionImage[index].addEventListener("mouseout", function () {
